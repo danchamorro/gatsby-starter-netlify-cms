@@ -1,33 +1,56 @@
 ---
-templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+templateKey: blog-post
+title: My Third Week - Lambda Labs
+date: 2018-11-30T15:04:10.000Z
+description: My third-week journey in Lambda Labs building the Auto Invoicer!!
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - Week Three
 ---
+![Contribution Chart](/img/contribution113018.png)
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+# Detailed Analysis
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+This week I worked on multiple front-end functionality jobs. I paired programmed with one of my teammates mark couples times as well. One of the first things I did on the beginning of the week implemented a package called `concurrently`. This helped my team be able to run the frontend server and backend server at the same time with one command `yarn run dev`.  After installing the package there were some configuration changes that needed to be made to the `package.json` on the server side. 
 
-## A little history
+![Package.json](/img/packagejson.png)
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+Next Mark and I starting pair programming to get our Stripe form to accept a charge for a variable amount. This was tougher than it sounds. The main issues were that a user could pay $0.99 for a single credit, but the user could also pay $9.99 for unlimited credits. In the end, we ended up writing some logic to check if the user chooses one over the other we would update the credits accordingly.
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+![Checkout Form ](/img/checkoutform1130.png)
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+The next requirement was for me to figure out how to update the city and state of our invoice form by only typing in the zip code. For this, I used google's Geolocation API. After I implemented it I noticed some bugs. When I used the zip code it would you give you a city and a state and other times it gave you a city and a county instead. I then enlisted the help of Mark. Together we brainstormed the best approach.
 
-## What you need to know before trying
+![Invoice Form](/img/invoiceform113018.png)
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+# Milestone Reflections
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+This week we all worked well with each other again. Lots of pair programming going on. No conflicts what so ever.
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+# Submitted Work
+
+## Front End
+
+* Ticket 1
+  * Github: <https://github.com/Lambda-School-Labs/Labs8-AutoInvoicer/pull/45>
+  * Trello: <https://trello.com/c/RwLnAGlX>
+* Ticket 2
+  * Github: <https://github.com/Lambda-School-Labs/Labs8-AutoInvoicer/pull/46>
+  * Trello: <https://trello.com/c/OljZqcO2>
+  * Trello: <https://trello.com/c/PvuFuQoh>
+* Ticket 3
+  * Github: <https://github.com/Lambda-School-Labs/Labs8-AutoInvoicer/pull/58>
+  * Github: <https://github.com/Lambda-School-Labs/Labs8-AutoInvoicer/pull/55>
+  * Trello: <https://trello.com/c/1ZTkgaOJ>
+  * Trello: <https://trello.com/c/0YMWEvv5>
+
+# Group Work
+
+Backend: <https://auto-invoicer.now.sh>
+
+Frontend:<https://auto-invoicer.now.sh>
+
+# Whiteboard Interview
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QotZbvdkqb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
