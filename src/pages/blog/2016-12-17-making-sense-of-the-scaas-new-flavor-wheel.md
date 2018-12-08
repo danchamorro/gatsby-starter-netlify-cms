@@ -64,4 +64,4 @@ Our team is awesome. Everyone has a good balance of front and back-end knowledge
 
 **Backend:** <https://api-auto-invoicer.now.sh/>
 
-**Frontend:**[** **https://auto-invoicer.now.sh/](https://auto-invoicer.now.sh/)
+**Frontend:** <https://auto-invoicer.now.sh/>
