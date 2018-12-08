@@ -1,32 +1,67 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+title: My First Week - Lambda Labs
+date: 2018-11-10T15:04:10.000Z
+description: My first-week journey in Lambda Labs building the Auto Invoicer!
 tags:
-  - flavor
-  - tasting
+  - Week One
 ---
+![Contribution Chart](/img/contributionchart.png)
 
-![flavor wheel](/img/flavor_wheel.jpg)
+# Detailed Analysis
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+One of the tasks that I choose to do was to set up the MongoDB Schemas. I decided this task because I never used MongoDB before and I wanted to learn more about it. My first order of business was to research MongoDB and understand how it works and how was I going to connect it Node. After a few hours of research, I felt ready. I learned that I would need a package called Mongoose. Installed Mongoose and now was time to build the schemas.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+I started with the user Model because I knew it would have the least amount of fields.
 
-## What the updates mean to you
+### User Model
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+![Code Editor](/img/userschemacoderes.png)
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
+### Billing Model
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+![Billing Model](/img/billingschemacoderes.png)
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+### Invoice Model
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+![Invoice Model](/img/invoiceschemacoderes.png)
+
+# Testing the Models
+
+In order to test the if the Models are working correctly I needed to see if I could insert data into the database. For this is used Postman and configured some POST routes.
+
+### User POST Route
+
+![User Post Route](/img/userpostrouteres.png)
+
+### Billing POST Route
+
+![Billing POST Route](/img/billingpostrouteres.png)
+
+### Invoice POST Route
+
+![Image POST Route](/img/invoicepostrouteres.png)
+
+# Milestone Reflections
+
+Our team is awesome. Everyone has a good balance of front and back-end knowledge. We worked very well together. Those who were strong in one area help those who were weaker in certain areas, which for me was great because I was able to learn a few things from my teammates. We have yet to run into any friction. When deciding the stack we wanted to use, we listened to everyone's opinions and then collectively decided on the correct stack as a team.
+
+# Submitted Work
+
+### Front End
+
+* Ticket 1
+  * Github: <https://github.com/Lambda-School-Labs/Labs8-AutoInvoicer/pull/15>
+  * Trello: <https://trello.com/c/WLkH9a7S>
+
+### Back End
+
+* Ticket 1
+  * Github: <https://github.com/Lambda-School-Labs/Labs8-AutoInvoicer/pull/8>
+  * Trello: <https://trello.com/c/DnbqPu2a>
+
+# Group Work
+
+**Backend:** <https://api-auto-invoicer.now.sh/>
+
+**Frontend:** <https://auto-invoicer.now.sh/>
