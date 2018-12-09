@@ -1,5 +1,4 @@
 import React from "react";
-import "prismjs/themes/prism.css";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";

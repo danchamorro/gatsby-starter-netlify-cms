@@ -1,5 +1,4 @@
 import CMS from "netlify-cms";
-import "prismjs/themes/prism.css";
 
 import AboutPagePreview from "./preview-templates/AboutPagePreview";
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
