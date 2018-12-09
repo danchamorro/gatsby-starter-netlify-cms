@@ -7,8 +7,6 @@ tags:
   - Week Three
 ---
 
-<!-- end -->
-
 ![Contribution Chart](/img/contribution113018.png)
 
 # Detailed Analysis
