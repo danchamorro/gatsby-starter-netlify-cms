@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+require("prismjs/themes/prism-solarizedlight.css");
 
 import Navbar from "../components/Navbar";
 import "./all.sass";
