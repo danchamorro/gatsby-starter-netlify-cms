@@ -6,9 +6,12 @@ description: My forth-week journey in Lambda Labs building the Auto Invoicer!!
 tags:
   - Week Four
 ---
+
+<!-- end -->
+
 ```javascript
 if (this.state.toDashboard === true) {
-      this.decrementCredits();
-      return <Redirect to="/" />;
-    }
+  this.decrementCredits();
+  return <Redirect to="/" />;
+}
 ```
